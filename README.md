@@ -37,6 +37,7 @@ cd chat-backend
 set up an .env file
 and a MySQL database
 
+```sql
 CREATE DATABASE chat_app;
 USE chat_app;
 
@@ -62,3 +63,4 @@ CREATE TABLE messages (
     FOREIGN KEY (receiver_id) REFERENCES users(id) ON DELETE CASCADE,
     INDEX idx_conversation (sender_id, receiver_id)
 );
+```
